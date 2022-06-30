@@ -9,9 +9,9 @@ dotenv.config();
 const main = async () => {
   // MongoDB
   try {
-    // await mongoose
-    //   // eslint-disable-next-line no-undef
-    //   .connect(process.env.MONGODB_URL);
+    await mongoose
+      // eslint-disable-next-line no-undef
+      .connect(process.env.MONGODB_URL);
 
     console.log("Connected to DB");
 
